@@ -1,3 +1,39 @@
+
+@font-face {
+    font-family: et-line;
+    src: url(fonts/et-line.eot);
+    src: url(fonts/et-line.eot?#iefix) format('embedded-opentype'), url(fonts/et-line.woff) format('woff'), url(fonts/et-line.ttf) format('truetype'), url(fonts/et-line.svg#et-line) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+.et-icon-browser,
+.et-icon-presentation,
+.et-icon-edit{
+    font-family: et-line;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block
+}
+
+.et-icon-browser:before {
+    content: "\e00c"
+}
+
+.et-icon-presentation:before {
+    content: "\e00e"
+}
+
+.et-icon-edit:before {
+    content: "\e01c"
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +52,12 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+
+
+input:hover , textarea:hover, input:focus , textarea:focus {
+    border: 1px solid #c27956!important;
 }
 
 #page-loading-blocs-notifaction {
@@ -91,7 +133,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/background-texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -133,7 +175,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +192,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -283,10 +325,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -333,8 +371,11 @@ a:hover {
 }
 
 .nav > li a:hover,
-.nav > li a:focus {
+.nav > li a:focus, 
+.navbar-brand:focus, 
+a[data-gallery-id="gallery-1"]:focus {
     background: transparent;
+    border-bottom: 1px solid #000000;
 }
 
 .navbar-toggle {
@@ -473,6 +514,10 @@ button {
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+}
+
+.btn-clean:hover {
+    border: 1px solid #c27956;
 }
 
 .icon-md {
@@ -646,7 +691,8 @@ h4,
 h5,
 h6,
 p,
-label,
+label, 
+blockquote,
 .btn,
 a {
     font-family: "helvetica";
@@ -660,6 +706,8 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .hero-bloc-text-sub {
@@ -677,7 +725,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -692,7 +740,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #FFFFFF !important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -701,7 +749,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 50px auto;
 }
 
 h2 {
@@ -714,6 +762,19 @@ h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+}
+
+.title {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.title-fw {
+    border-bottom: 2px solid #333333!important;
+}
+
+.title-fb {
+    border-bottom: 2px solid #F3976C !important;
 }
 
 .med-width-whitespace {
@@ -735,17 +796,23 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #FFFFFF!important;
+.black {
+    color: #000000!important;
 }
+
+.white {
+    color: #ffffff!important;
+}
+
+
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 60px;   
 }
 
 .avatar {
@@ -753,11 +820,13 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
+    display: block;
+    margin-top: 30px;
     font-weight: 900;
     text-decoration: underline!important;
 }
@@ -771,28 +840,51 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    
+    background-color: rgba(45, 45, 46, 0.6);
 }
 
 .tc-white {
     color: #F3976C!important;
 }
 
-.btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+.btn-atomic-tangerine  {
+    background: #F3976C!important;
+    color: rgb(0, 0, 0)!important;
 }
 
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+.btn-orange {
+    
+    background: #c27856d0!important;
+    font-size: 1.2em;
+}
+
+.btn-orange:hover, 
+.btn-orange:focus  {
+    background: #b6400a7a!important;
+    border: 2px solid black;
+}
+
+.btn-atomic-tangerine:hover, 
+.btn-atomic-tangerine:focus {
+    background: rgb(48,48,48)!important;
+    color: #c27956!important;
+}
+
+.btn-atomic-tangerine:focus {
+    border: 3px solid #ffffff!important;
+}
+
+.btn-atomic-tangerine:hover > .cta-hero {
+    color: #F3976C!important;
 }
 
 .ltc-white {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover {
+.ltc-white:hover, 
+.ltc-white:focus  {
     color: #cccccc!important;
 }
 
@@ -810,11 +902,11 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/background-dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/background-lines.png");
 }
 
 .bg-banniere {
@@ -822,7 +914,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/background-chouette-agence.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +940,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +964,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +973,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -974,13 +1061,13 @@ h4 {
         margin-left: 10px;
     }
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 40px 10px;
     }
     .bloc-sm,
     .bloc-md {
@@ -1026,17 +1113,86 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .black-background {
+        padding: 40px 0px;
+    }
+    .hero-bloc-text {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+.bloc-p-def, 
+.citation, 
+.activities, 
+.title-ft, 
+.contact {
+    font-size: 22px;
+}
+
+.contact {
+    font-weight: 600;
+}
+
+.title-ft {
+    margin: 30px;
+}
+
+.activities {
+    margin-bottom: 30px;
+}
+
+
+.citation {
+    font-style: italic;
+    padding: 0 30px;
+    margin-bottom: 3px;
+}
+
+.citation + p {
+    font-size: 1.09em;
+}
+
+.link {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.list li{
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.link a{
+    margin: 10px;
+    color: black!important;
+}
+
+.link a:hover {
+    text-shadow: 1px 1px 1px black;
+}
+
+.icon-md:hover, 
+.social:focus {
+    text-shadow:2px 2px 2px black;
+}
+
+
+
+@media (max-width: 500px) {
+    .icon-md {
+        font-size: 30px;
     }
 }
