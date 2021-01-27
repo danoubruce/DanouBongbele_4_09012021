@@ -714,7 +714,7 @@ p {
     margin-top: 22px;
     color: #FFFFFF !important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    padding: 8px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -813,7 +813,7 @@ h4 {
 
 .bgc-atomic-tangerine {
     
-    background-color: rgba(45, 45, 46, 0.6);
+    background-color:#F3976C ;
 }
 
 .tc-white {
@@ -825,23 +825,9 @@ h4 {
     color: rgb(0, 0, 0)!important;
 }
 
-/*.btn-orange {
-    
-    background: #c27856d0!important;
-    font-size: 1.2em;
-}
-
-.btn-orange:hover, 
-.btn-orange:focus  {
-    background: #b6400a7a!important;
-    border: 2px solid black;
-}*/
 
 .btn-atomic-tangerine:hover, 
 .btn-atomic-tangerine:focus {
-    /*background: rgb(48,48,48)!important;
-    color: #c27956!important;*/
-   /* background: #c27956;*/
    box-shadow: 0 0 4px #3105f7;
     color: #FFFFFF!important;
 }
