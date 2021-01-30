@@ -1,5 +1,5 @@
-
 body {
+    font-size: 18px;
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -492,7 +492,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -714,7 +714,7 @@ p {
     margin-top: 22px;
     color: #FFFFFF !important;
     text-transform: uppercase;
-    padding: 8px 28px 12px 28px;
+    padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -825,7 +825,6 @@ h4 {
     color: rgb(0, 0, 0)!important;
 }
 
-
 .btn-atomic-tangerine:hover, 
 .btn-atomic-tangerine:focus {
    box-shadow: 0 0 4px #3105f7;
@@ -860,6 +859,7 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
+
 }
 
 .bg-dots-bg {
@@ -1095,4 +1095,14 @@ h4 {
         text-align: center;
     }
 }
+
+.citation{
+    font-size: 20px;
+}
+
+.form-control{
+    height: 48px;
+}
+
+
 
