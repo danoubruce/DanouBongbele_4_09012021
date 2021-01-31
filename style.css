@@ -168,7 +168,6 @@ input:hover , textarea:hover, input:focus , textarea:focus {
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
     color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .panel {
@@ -522,7 +521,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0, .5);
     box-shadow: none;
 }
 
@@ -725,7 +724,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 28px;
     line-height: 1.4em;
 }
 
@@ -774,6 +773,7 @@ h4 {
 
 .white {
     color: #ffffff!important;
+    font-size: 18px;
 }
 
 
@@ -792,7 +792,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(0, 0, 0, 0.7);
+   background-color: rgba(0, 0, 0, .9);
     padding: 40px 40px 40px 40px;
 }
 
@@ -812,8 +812,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    
-    background-color:#F3976C ;
+    background-color: #FFFFFF;
 }
 
 .tc-white {
@@ -1099,10 +1098,25 @@ h4 {
 .citation{
     font-size: 20px;
 }
+.citation q{
+    font-style: italic;
+}
 
 .form-control{
     height: 48px;
 }
+
+#bloc-7 h2{
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-sm-12 p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 
 
 
