@@ -1168,6 +1168,33 @@ h4 {
     font-size: 1.5rem;
     margin-left: 2.5rem;
   }
+  
+  
+
+
+
+
+
+
+
+
+.form-control{
+    height: 48px;
+}
+
+#bloc-7 h2{
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-sm-12 p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.partners_title{
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+  }
 
   #objectifs{
       background: url(img/image-de-presentation-compressor.jpg);
