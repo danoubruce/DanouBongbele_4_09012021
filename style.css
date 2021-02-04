@@ -1204,11 +1204,9 @@ h4 {
   iframe{
       width: auto;
   }
+  .col-sm-4 ul{
+      display: flex;
+      
+  }
   
   
-
-
-
-
-
-
