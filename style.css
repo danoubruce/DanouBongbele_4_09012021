@@ -836,9 +836,14 @@ h4 {
 
 .btn-atomic-tangerine:hover, 
 .btn-atomic-tangerine:focus {
+   /*box-shadow: 0 0 4px #3105f7;*/
     color: #FFFFFF!important;
-    border: 1px solid #ffffff;
+    /*background-color: #BD2020;*/
 }
+/*.btn-atomic-tangerine:hover{
+    color: #000000;
+    background: #BD2020;
+}*/
 
 .btn-atomic-tangerine:focus {
     border: 3px solid #ffffff!important;
@@ -1199,9 +1204,4 @@ h4 {
   iframe{
       width: auto;
   }
-  .col-sm-4 ul{
-      display: flex;
-      
-  }
-  
   
